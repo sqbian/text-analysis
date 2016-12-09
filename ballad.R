@@ -30,7 +30,7 @@ testtext = fulltext[!fulltext$BDFT_BDID%in%combine$BDA_BDID,]
 sapply(1:dim(testtext)[1],function(i) write.table(testtext$BDFT_Text[i],row.names = FALSE, col.names = FALSE, quote = FALSE,
                                                  file = paste0(paste(i, testtext$BDFT_BDID[i], sep = "_"),".txt")))
 
-setwd("C:/Users/bian0553/Desktop/SQLproject")
+
 
 setTRAIN = strsplit(combine$BDFT_Text, split = "[[:space:]]|[[:punct:]]")
 setTRAIN = lapply(1:length(setTRIAN), function(j) tolower(lapply(1:length(setTRIAN), function(i) setTRIAN[[i]][setTRIAN[[i]]!=""])[[j]]))
@@ -224,7 +224,7 @@ print(paste0("i is ",i))
 }
 
 
-setwd("C:/Users/bian0553/Desktop/SQLproject")
+
 write.table(without[,-2],file = "ESTCID predict")
 
 

@@ -34,7 +34,6 @@ entities <- function(doc, kind) {
 }
 
 
-setwd("C:/Users/bian0553/Desktop/extractentity/WHITMAN_ARCHIVE/correspondence")
 col1 = character()
 col2 = character()
 for(i in 1:length(list.files())){
@@ -62,7 +61,6 @@ for(i in 1:length(list.files())){
 }
 
 correspondence = data.frame(file = col1, place = col2)
-setwd("C:/Users/bian0553/Desktop/extractentity/")
 write.table(correspondence, file = "correspondence")
 
 
